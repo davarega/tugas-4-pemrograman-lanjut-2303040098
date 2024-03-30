@@ -35,9 +35,9 @@ const Carousel = () => {
 
 	return (
 		<div className='h-auto w-full mt-10 pt-10 relative group'>
-			<a href='#' className='w-full h-full rounded-2xl ease-in-out bg-center bg-cover duration-500'>
+			<div href='#' className='w-full h-full rounded-2xl ease-in-out bg-center bg-cover duration-500'>
 				<img src={process.env.PUBLIC_URL + slides[currentIndex].url} alt="" />
-			</a>
+			</div>
 			<div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
 				<span onClick={prevSlide}>
 					<ion-icon name="chevron-back-outline"></ion-icon>
