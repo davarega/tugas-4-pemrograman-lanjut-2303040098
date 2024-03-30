@@ -10,7 +10,8 @@ const Profile = () => {
 					<h1 href="" className=''>
 						Universitas Muhammadiyah Purwokerto (UMP) merupakan perguruan tinggi swasta terbesar di Jawa Tengah bagian barat, yang terakreditasi UNGGUL (No. SK: 557/SK/BAN-PT/Ak/PT/VIII/2023). UMP secara aktif mengembangkan kerja sama Internasional dengan ratusan perguruan tinggi ternama dunia dalam bidang riset dan peningkatan kualitas sumber daya manusia (SDM). Selain itu, UMP saat ini juga memperkuat
 					</h1>
-					<h1 href="">SELENGKAPNYA</h1>
+					<br></br>
+					<a href="#" className='hover:text-yellow-200 duration-500'>SELENGKAPNYA</a>
 				</div>
 			</div>
 		</div>
