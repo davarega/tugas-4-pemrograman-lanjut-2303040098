@@ -1,14 +1,14 @@
-import About from "../components/about";
+import Base from "../components/base";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 
 const AboutPage = () => {
 	return (
-		<div>
+		<main>
 			<Navbar />
-			<About />
+			<Base>ABOUT PAGE</Base>
 			<Footer />
-		</div>
+		</main>
 	);
 };
 

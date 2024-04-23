@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Button from './NavButton';
 
 const Navbar = () => {
 	let Links = [
@@ -23,17 +22,25 @@ const Navbar = () => {
 					<ion-icon name={open ? 'close' : 'menu'}></ion-icon>
 				</div>
 
-				<ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
+				<ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full bg-white md:w-auto md:pl-0 px-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
 					{
 						Links.map((link) => (
-							<li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
-								<a href={link.link} className='text-gray-800 hover:text-gray-400 duration-500'>{link.name}</a>
+							<li key={link.name} className='text-lg md:my-0 my-7 py-1 text-center'>
+								<a href={link.link} className='text-gray-800 hover:text-gray-400 font-[Poppins] p-5  duration-300'>{link.name}</a>
 							</li>
 						))
 					}
-					<Button>
-						Get Started
-					</Button>
+					<div className="space-x-4 flex">
+						<button
+							className='bg-indigo-600 text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-yellow-500 duration-300'
+						>
+							Sign In
+						</button>
+						<button
+							className='bg-indigo-600 text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-yellow-500 duration-300'>
+							Log In
+						</button>
+					</div>
 				</ul>
 			</div>
 		</div>
